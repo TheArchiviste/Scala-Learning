@@ -1,4 +1,4 @@
-// 4x4 Rubic Cube
+// 2x2 Rubic Cube
 import java.{util => ju}
 
 abstract class Colour
