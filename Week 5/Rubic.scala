@@ -75,6 +75,7 @@ def actions(c: Cube, as: Actions) : Map[Cube, Actions] =
         clock(c) -> (Clock::as),
         right(c) -> (Right::as)) 
 
+// Bi-directional Breadth-First-Search
 def bsearch(cs: Map[Cube, Actions], bs: Map[Cube, Actions]) : Actions = {
     val res = cs.keySet intersect bs.keySet
     if (!res.isEmpty) (cs(res.head).reverse ::: bs(res.head))
