@@ -33,7 +33,7 @@ def check2 = get_me_an_int("12u45").map(_ % 2 == 0)
 
 val lst = List("12345", "foo", "5432", "bar", "x21")
 
-def onlyInts = for (x <- lst) yield get_me_an_int(x)
+def onlyInts = for (x <- lst) yield get_me_an_int("12345")
 
 def sumThemUp = lst.map(get_me_an_int).flatten.sum
 

@@ -2,7 +2,7 @@ def add(x: Int, y: Int) = x + y
 
 val lst = List(1,2,3,4,5).map(add(3,_))
 
-// Give the arguements of the function in a delayed 
+// Give the arguements of the function in a delayed fashion.
 def add1(x: Int)(y: Int) = x + y
 
 val lst1 = List(1,2,3,4,5).map(add1(3))
